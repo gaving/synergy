@@ -1,0 +1,37 @@
+Collaborative Software Development
+Supervisors: Matthew Chalmers and Ray Welland
+
+A few years ago, a Level 4 undergraduate developed a recommender for code files
+that ran within jEdit, an open source editor written in Java. It used shared
+logs of editing activity as the basis for suggestions as to what might be good
+files to look at in combination with those currently active. Last year, a Level
+3 group project looked at a similar topic. They extended the Eclipse IDE so as
+to better support collaboration and awareness between programmers.
+Collaborative programming can be an essential means by which to develop
+software, often set within 'agile' and 'extreme' programming practices, but
+there is a distinct lack of tools available to utilise this form of software
+development. CVS and RCS have proved to be essential tools for software
+development in teams, but these do not support 'real time' collaborative
+development. This can be an imperative aspect to development especially if the
+team is distributed across different locations. Working in Java, the group
+developed the Synergy plugin. Synergy seeks to integrate collaborative
+capabilities into the Eclipse IDE, and enabled teams of software developers to
+work together more productively more matter how far apart they are distributed.
+Synergy supported, for example, awareness of who had worked on a piece of code,
+who was logged in now, sending of messages and code fragments in an 'instant
+messenger' style, and views onto a database of past programming activity.
+
+This project would begin by putting the recommender and Synergy work in the
+context of wider literature on collaborative software development, and
+associated tools for programmers. Then the student would integrate the
+recommender into Synergy, and demonstrate the system's utility with a small
+user trial. He or she should also build up experience of using the recommender
+in his/her own day-to-day programming work. The student would then be expected
+to use the findings of the study and his/her experience to develop new design
+requirements that could be implemented and evaluated within the lifetime of the
+project. The end result should be a new version of Synergy along with evidence
+of its characteristic features, strengths and weaknesses.
+
+Class: MSc CS
+
+Prerequisites: Strong Java programming skills including use of Eclipse and SWT. 

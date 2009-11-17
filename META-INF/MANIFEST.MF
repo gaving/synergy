@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Synergy
+Bundle-SymbolicName: net.sourceforge.synergy; singleton:=true
+Bundle-Version: 1.0.1
+Bundle-Activator: net.sourceforge.synergy.Synergy
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources,
+ org.eclipse.jface.text,
+ org.eclipse.ui.workbench.texteditor
+Eclipse-AutoStart: true
+Bundle-ClassPath: lib/draw2d.jar,
+ lib/java-elvin-4.0.5.jar,
+ lib/mysql-connector-java-5.0.0-beta-bin.jar,
+ .

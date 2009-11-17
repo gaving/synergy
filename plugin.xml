@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<plugin>
+
+   <extension point="org.eclipse.ui.views">
+      <category
+            name="Synergy"
+            id="Synergy">
+      </category>
+      <view
+            name="Developer List"
+            icon="icons/view_developer.gif"
+            category="Synergy"
+            class="net.sourceforge.synergy.views.DeveloperView"
+            id="net.sourceforge.synergy.views.DeveloperView">
+      </view>
+     <view
+            name="Conversations"
+          	icon="icons/view_conversations.gif"
+            category="Synergy"
+          	class="net.sourceforge.synergy.views.ChatView"
+      		id="net.sourceforge.synergy.views.ChatView">
+       </view>
+            <view
+            name="File History"
+          	icon="icons/view_filehistory.gif"
+            category="Synergy"
+          	class="net.sourceforge.synergy.views.FileHistoryView"
+      		id="net.sourceforge.synergy.views.FileHistoryView">
+       </view>
+       
+       <view
+            name="Line Visualiser"
+          	icon="icons/view_linevis.gif"
+            category="Synergy"
+          	class="net.sourceforge.synergy.views.LineVisualiserView"
+      		id="net.sourceforge.synergy.views.LineVisualiserView">
+       </view>
+        <view
+            name="File Recommendations"
+          	icon="icons/view_recommendations.gif"
+            category="Synergy"
+          	class="net.sourceforge.synergy.views.FileRecommendationsView"
+      		id="net.sourceforge.synergy.views.FileRecommendationsView">
+       </view>
+   </extension>
+
+  <extension point="org.eclipse.ui.popupMenus">
+    <viewerContribution id="ContributionEditorPopup"
+                        targetID="#CompilationUnitEditorContext" >
+      <action id="ContributionEditorPopupAction"
+              label="Web search..."
+              icon="icons/context_search.gif"
+              tooltip="Search the query string in preferences for the current selection."
+              menubarPath="group.edit"
+              class="net.sourceforge.synergy.actions.WebSearchAction" >
+      </action>
+    </viewerContribution>
+
+    <viewerContribution id="ContributionEditorPopup"
+                        targetID="#CompilationUnitEditorContext" >
+      <action id="ContributionEditorPopupAction"
+              label="Send selection..."
+              icon="icons/context_sendcode.gif"
+              tooltip="Sends the current snippet of code to a connected user."
+              menubarPath="group.edit"
+              class="net.sourceforge.synergy.actions.SendCodePopupAction" >
+      </action>
+    </viewerContribution>
+  </extension>
+
+   <extension point="org.eclipse.ui.actionSets">
+      <actionSet
+            label="Synergy Action Set"
+            visible="true"
+            id="net.sourceforge.synergy.actionSet">
+         <menu label="S&amp;ynergy" id="synergyMenu">
+            <separator name="synergyGroup"></separator>
+         </menu>
+         <action
+               label="&amp;Listen"
+               icon="icons/toolbar_connect.png"
+               class="net.sourceforge.synergy.actions.ElvinConsumerAction"
+               tooltip="Listen for incoming signals"
+               menubarPath="synergyMenu/synergyGroup"
+               toolbarPath="synergyGroup"
+               id="net.sourceforge.synergy.actions.ElvinConsumerAction">
+         </action>
+         <action
+               label="&amp;Code Calendar"
+               icon="icons/toolbar_calendar.png"
+               class="net.sourceforge.synergy.codecalendar.CodeCalendarLauncher"
+               tooltip="Show a monthly history of code changes"
+               menubarPath="synergyMenu/synergyGroup"
+               toolbarPath="synergyGroup"
+               id="net.sourceforge.synergy.codecalendar.CodeCalendarLauncher">
+         </action>
+      </actionSet>
+   </extension>
+
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            name="Synergy"
+            class="net.sourceforge.synergy.prefs.GeneralRootPage"
+            id="net.sourceforge.synergy.prefs.GeneralRootPage">
+      </page>
+      <page
+            name="Web Search"
+            class="net.sourceforge.synergy.prefs.WebSearchRootPage"
+            id="net.sourceforge.synergy.prefs.WebSearchRootPage"
+            category="net.sourceforge.synergy.prefs.GeneralRootPage">
+      </page>
+   </extension>
+
+	<extension point="org.eclipse.ui.perspectives">
+	   <perspective
+	         name="Synergy"
+        	 icon="icons/synergy.gif"
+	         class="net.sourceforge.synergy.perspective.SynergyPerspective"
+	         id="net.sourceforge.synergy.perspective.Synergy">
+	   </perspective>
+	</extension>
+	
+</plugin>

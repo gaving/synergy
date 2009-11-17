@@ -1,0 +1,102 @@
+
+Notes
+==================
+
+Handy source of seeing what was changed, discussed, fixed for documentation. 
+(In addition to ChangeLog.)
+
+==================
+
+2006-02-02 02:12  colin (graph related classes)
+
+	I think this experience could be useful for documentation.
+	
+	Trying to update the code vis graph when a user adds or deletes lines of code in the 
+	project is much more difficult than I first thought.  Naively I thought I could just
+	increase the size of the array containing each line of code and then just re-get the 
+	updated lines of code from the editor window.  Nope.
+	
+	Two problems:  The first is that a duplicate dynamic array containing the old code
+	needs to be created, not as easy as it seems based on the current implementation of
+	a dynamic array.  The second more crucial point is that the old number of changes in
+	each line of code (copied to the new array I mentioned above) needs to be reflected
+	in the updated code.  For example:
+	
+	Say we have a source file with 60 lines of code.  The user then spaces out his / her
+	project with 3 carriage returns on line 20,21 and 22.  What happens?  The graph 
+	increments the number of changes of each line of code from 20 to 63.  Hardly accurate.
+	Deleting lines is just as bad, if not worse.
+	
+	The new proposed implementation is to write insert and remove methods for the 
+	Dyn array, or even better - use a list or collection instead.  The first attempt above
+	just gave too many opportunities for null pointer exceptions.
+	
+
+==================
+
+2006-01-31 02:52  colin (any)
+
+	Sometimes eclipse / java doesn't output a stack trace when a nasty error occurs,
+	most commonly a NullPointerException.  Below is a sample of how to get the stack trace
+	(straightforward)  :
+	
+		 
+		 Display.getDefault().asyncExec(new Runnable() {
+				public void run() {
+					try
+					{
+						 String theoriginalcode = codedata.get(caretLinePos).code;	
+					} catch (Exception ex)
+					{
+						System.err.println("*** Stack trace of contained error ***");
+						ex.printStackTrace();
+					}
+	
+				}});
+
+==================
+
+2006-01-12 19:21  gavin (DataAccess.java)
+
+  - Plan: http://wiki.brokentrain.net/index.php?title=TeamProjectDatabaseSchema
+  - See misc/table_setup.sql for something you can "\." into mysql for example data to query.
+  - Had to add "implements Serializable" to Developer.java (to make 'Devloper' able to be serialised.)
+  - Massive snag: only things that implement 'Serializable' can be serialised
+	 ...And IProjectFile[], AnyEclipseObject, etc aren't!
+	* See the commented code in TestPlugin.java 'getOpenProjects()' for an example
+	* We'll probably need to fall back to storing strings if we don't get this sorted.
+	 
+	DataAccess.java:
+	
+	- Can't simply grab a resultset and close the statement to read later
+	 It must be done while it's open. (See getResultSet()'s inability to close the statement)
+	 This seems to work fine, but might need rewritten if it poses problems. (Hopefully shouldn't.)
+	  
+	Other:
+	- Feel free to still use 'gav.g.la' in place of 'db_hostname' if you can't be fucked messing with mysql.
+	- If you think this could be better implemented please feel free :)
+	
+==================
+
+2006-01-14 02:57  gavin (ChatView.java):
+
+  Major tidy up, loads of repeated code compacted into seperate classes.
+  	- See sendMessage(), receivedMessage()
+   - all references of setText() and the way it handles window updates removed, why
+     use setText() to 'reset' the entire windows text when append() can do this
+     and only 'appends' the last line to the text area.
+   - Structure of code in this file reads better at least.
+  
+  TODO:
+  Styled text is still a little weird the way it calculates what to make blue.
+  	- Needs rethought, maybe just bold everything up to the first ':' instead of using names length.
+  
+  FIXED:
+   - Message window now 'autoscrolls' and stops the bar from jumping to the top.
+   - Unused comments, stdout prints removed.
+   - Some weird focusing bugs removed, but still isn't perfect. (i.e. if the tab isn't open.)
+   
+  OTHER:
+   - Hopefully nothing is destroyed despite the vast code differences, but can be rolled back if
+     this occurs.
+ 

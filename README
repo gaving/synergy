@@ -1,0 +1,79 @@
+
+About
+==================
+"Synergy" - Real-time collaborative plugin for eclipse.
+
+Authors
+==================
+Colin Brown
+Chris McManus
+Daniel Harkin
+Gavin Stewart
+
+Classpath problems
+==================
+*RESOLVED DUE TO JARS BEING COMITTED AND USING RELATIVE PATH LINKS INSTEAD OF ABSOLUTES*
+
+Kept for documentation issues:
+
+> The '.classpath' file has been added to the .cvsignore file and stripped from the repository.
+> 
+> This means it should be much easier to update your current cvs copy without having to then set your external libraries and jar files back up.
+>
+> However, some problems may arise with this still with eclipse not finding "Plugin-Dependencies" which might not be specified in the new .classpath eclipse makes.
+> 
+> To get round this however the following soluton is needed:
+>
+>    * Click the triangle in the 'package explorer' and go to 'Filters..' (See: http://gav.brokentrain.net/uni/eclipse/filters.png)
+>    * Ensure '.* resources' item is unchecked in the list and hit 'Ok'
+>    * Rename the file in 'misc/classpath-sample' to root directory as '.classpath' 
+>    * Configure your libraries as normal in 'Build path' (for hopefully the last time).
+>
+> Hopefully you should be then be up and running.
+
+Web browser setup
+==================
+
+(From: http://www.eclipse.org/swt/faq.php#browserlinux)
+
+Q: What do I need to run the SWT Browser inside Eclipse on Linux/GTK or Linux/Motif?
+    A: You need one of the following:
+
+        * Mozilla version 1.4 GTK2 - Mozilla 1.6 GTK2 can be used with SWT 3.0.
+        * Mozilla version 1.4 GTK2 - Mozilla 1.7.8 GTK2 can be used with SWT 3.1.
+        * Firefox can be used with SWT 3.1 (Linux only), provided that it has been compiled with linkable Gecko libraries. It is important to note that Firefox downloads from mozilla.org currently do not satisfy this criteria, but Firefox installations that are included in major Linux distributions typically do. Attempting to use a statically-linked Firefox install will display the error message "No more handles [NS_InitEmbedding...error -2147221164]".
+
+
+    The version of Mozilla installed on your system varies with your Linux distribution. The following Linux distributions meet the Mozilla requirements for using the Browser widget.
+
+        * RedHat Enterprise Linux 3 and 4
+        * Suse 9
+
+
+    If you use the IBM 1.4 VM check this.
+
+    Instructions for RedHat 9 users:
+    You need the Mozilla version 1.4 GTK2 RPMs for RedHat 9. Mozilla 1.5 GTK2 or Mozilla 1.6 GTK2 can also be used. For example, the RPMs for the Mozilla version 1.6 GTK2 can be downloaded from the Mozilla ftp site.
+
+       1. Uninstall any prior Mozilla version
+       2. Install the Mozilla RPMs
+       3. Run Mozilla once. Verify the application opens HTML documents correctly. Check the version number (1.6) in the Mozilla About dialog.. Verify you now have the Mozilla configuration file /etc/gre.conf.
+       4. Start Eclipse. Eclipse is now ready to use the Browser widget.
+
+
+    Instructions for other Linux distributions:
+    You need the Mozilla version 1.4 GTK2 for your distribution. Mozilla 1.5 GTK2 or Mozilla 1.6 GTK2 can also be used.
+
+       1. If you are using SWT 3.0, download the Mozilla 1.6 Xft and GTK2 build available from the Mozilla XFT website. If you are using SWT 3.1, you can choose to use the more recent Mozilla 1.7.3 GTK2 from Mozilla.org.
+       2. Uninstall any prior Mozilla version.
+       3. Extract and install the Mozilla build.
+       4. Run Mozilla once. Verify the application run correctly and check the version number (1.6) in the Mozilla About dialog.
+       5. Set the environment variable MOZILLA_FIVE_HOME to the folder containing your Mozilla install. e.g. setenv MOZILLA_FIVE_HOME /usr/lib/mozilla
+       6. Start Eclipse. Eclipse is now ready to use the Browser widget.
+
+Compiler problems
+==================
+Due to our use of generics and annoyance with the various compiler warnings eclipse throws while using 1.4 sdk, the project has been updated to use a 1.5 compiler specifically.
+
+This may cause some problems on check out, but should hopefully have been solved by the including of the '.settings' folder into version control.
+If problems still occur however, check you have a 1.5 compiler installed by right clicking the project -> properties -> java compiler and confirming '1.5' in the drop down box

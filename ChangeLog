@@ -1,0 +1,1557 @@
+2006-03-17 01:13  gavin
+
+	* src/net/sourceforge/synergy/: codecalendar/CalendarTable.java,
+	  views/LineVisualiserView.java: Final commit.
+
+2006-03-17 00:31  colin
+
+	* src/net/sourceforge/synergy/views/FileRecommendationsView.java:
+	  final tidy
+
+2006-03-17 00:08  colin
+
+	* src/net/sourceforge/synergy/codecalendar/: CodeCalendar.java,
+	  CodeCalendarLauncher.java: Fixed the bug that meant you couldn't
+	  reopen the code calendar.
+
+2006-03-16 03:33  colin
+
+	* src/net/sourceforge/synergy/codecalendar/DayDataSet.java: Removed
+	  some debug information.
+
+2006-03-16 03:15  colin
+
+	* src/net/sourceforge/synergy/: UtilityFunctions.java,
+	  codecalendar/CalendarTable.java, codecalendar/CodeCalendar.java,
+	  codecalendar/DayCalendarData.java, codecalendar/DayDataSet.java,
+	  codecalendar/MultiLineToolTipUI.java,
+	  codecalendar/TextAreaRenderer.java,
+	  linevisactions/CodeWatcher.java,
+	  linevisactions/EditorFunctions.java,
+	  views/LineVisualiserView.java: The new Code Calendar, complete in
+	  my eyes :)  Also javadoced it and fixed a few of the thread
+	  crashes on shutdown but not them all.
+
+2006-03-14 20:52  danny
+
+	* src/net/sourceforge/synergy/views/FileRecommendationsView.java:
+	  formatted
+
+2006-03-14 20:39  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-03-14 20:29  gavin
+
+	* src/net/sourceforge/synergy/: Dialogs.java, ElvinConsumer.java,
+	  ElvinProducer.java, RelatedFile.java, actions/ElvinConsumer.java,
+	  actions/ElvinConsumerAction.java, actions/ElvinProducer.java,
+	  views/ChatView.java, views/FileRecommendationsView.java:
+	  Rearranged 'ElvinConsumer' and 'ElvinProducer' about, improved
+	  dialogs so they no longer are sized massively on large datasets.
+	  Removed supress warnings from 'FileRecommendations' and made
+	  RelatedFile implement a proper generics interface class.
+
+2006-03-14 19:50  danny
+
+	* src/net/sourceforge/synergy/views/FileRecommendationsView.java:
+	  javadoc :D
+
+2006-03-14 03:13  gavin
+
+	* ChangeLog, misc/javadoc.sh: Modified javadoc script to exclude
+	  CVS dirs.
+
+2006-03-14 02:50  gavin
+
+	* src/net/sourceforge/synergy/linevisactions/EditorPage.java: Minor
+	  correction.
+
+2006-03-14 02:37  gavin
+
+	* src/net/sourceforge/synergy/: Dialogs.java, RelatedFile.java,
+	  relatedFile.java, linevisactions/CodeWatcher.java,
+	  linevisactions/EditorBook.java,
+	  linevisactions/EditorFunctions.java,
+	  linevisactions/EditorLine.java, linevisactions/Graph.java,
+	  views/FileHistoryView.java, views/FileRecommendationsView.java:
+	  Linevis javadoc.
+
+2006-03-12 21:46  danny
+
+	* src/net/sourceforge/synergy/views/FileRecommendationsView.java:
+	  [no log message]
+
+2006-03-12 21:34  danny
+
+	* src/net/sourceforge/synergy/: relatedFile.java,
+	  views/FileRecommendationsView.java: recommendations a bit better
+      
+2006-03-12 11:08  gavin
+
+	* src/net/sourceforge/synergy/: Synergy.java, data/DataUpdate.java:
+	  Tidying up.
+
+2006-03-11 16:50  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-03-10 21:53  gavin
+
+	* ChangeLog, misc/javadoc.sh: Updated changelog, added javadoc
+	  generating shellscript.
+
+2006-03-10 16:18  gavin
+
+	* README, plugin.xml, src/net/sourceforge/synergy/Dialogs.java,
+	  src/net/sourceforge/synergy/ReceivePulse.java,
+	  src/net/sourceforge/synergy/codecalendar/CodeCalendar.java,
+	  src/net/sourceforge/synergy/codecalendar/TextAreaRenderer.java,
+	  src/net/sourceforge/synergy/data/DataQueries.java,
+	  src/net/sourceforge/synergy/linevisactions/CodeWatcher.java,
+	  src/net/sourceforge/synergy/linevisactions/EditorBook.java,
+	  src/net/sourceforge/synergy/linevisactions/EditorFunctions.java,
+	  src/net/sourceforge/synergy/linevisactions/EditorLine.java,
+	  src/net/sourceforge/synergy/perspective/Perspective.java,
+	  src/net/sourceforge/synergy/perspective/SynergyPerspective.java,
+	  src/net/sourceforge/synergy/prefs/GeneralPage.java,
+	  src/net/sourceforge/synergy/views/ChatView.java,
+	  src/net/sourceforge/synergy/views/DeveloperActionFilter.java,
+	  src/net/sourceforge/synergy/views/DeveloperContentProvider.java,
+	  src/net/sourceforge/synergy/views/DeveloperFile.java,
+	  src/net/sourceforge/synergy/views/DeveloperLabelProvider.java,
+	  src/net/sourceforge/synergy/views/DeveloperView.java,
+	  src/net/sourceforge/synergy/views/FileHistoryView.java,
+	  src/net/sourceforge/synergy/views/LineVisualiser.java,
+	  src/net/sourceforge/synergy/views/LineVisualiserView.java:
+	  Completed javadoc, moved around some methods in FileHistoryView
+	  into their own class, 'DataQueries'.
+
+2006-03-10 11:03  gavin
+
+	* src/net/sourceforge/synergy/: Developer.java, ReceivePulse.java,
+	  SendPulse.java, linevisactions/EditorPage.java: More javadoc
+
+2006-03-10 00:32  gavin
+
+	* src/net/sourceforge/synergy/: Constants.java, Developer.java,
+	  Dialogs.java, Project.java, ReceiveObject.java, SendObject.java,
+	  Synergy.java, UtilityFunctions.java, actions/ElvinConsumer.java,
+	  actions/ElvinConsumerAction.java, actions/ElvinProducer.java,
+	  codecalendar/CodeCalendar.java,
+	  codecalendar/DayCalendarData.java,
+	  codecalendar/MultiLineToolTipUI.java, data/DataUpdate.java,
+	  data/SQLInterface.java: Half finished adding javadoc styled
+	  comments.
+
+2006-03-09 20:12  gavin
+
+	* ChangeLog: And again.
+
+2006-03-09 20:11  gavin
+
+	* ChangeLog: Proper changelog.
+
+2006-03-07 19:19  gavin
+
+	* misc/table_setup.sql: Increased modified VARCHAR size for longer
+	  filenames.
+
+2006-03-07 00:15  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-03-07 00:14  gavin
+
+	* build.properties, META-INF/MANIFEST.MF: Finishing touches to
+	  export plugin process.
+
+2006-03-06 23:49  gavin
+
+	* README, build.properties, plugin.xml, META-INF/MANIFEST.MF,
+	  icons/context_sendcode.gif,
+	  src/net/sourceforge/synergy/Synergy.java,
+	  src/net/sourceforge/synergy/UtilityFunctions.java,
+	  src/net/sourceforge/synergy/linevisactions/CodeWatcher.java,
+	  src/net/sourceforge/synergy/linevisactions/Graph.java,
+	  src/net/sourceforge/synergy/views/LineVisualiser.java: Send code
+	  icon, various methods tried to try and have the plugin shut down
+	  cleanly.
+
+	  Updated README.
+
+2006-03-06 18:31  gavin
+
+	* src/net/sourceforge/synergy/actions/ElvinConsumerAction.java:
+	  Fixed misnamed disconnect image.
+
+2006-03-06 18:08  gavin
+
+	* icons/buddylist.gif, icons/buddylist_delete.gif,
+	  icons/buddylist_info.gif, icons/buddylist_offline.gif,
+	  icons/buddylist_offline_server.gif, icons/buddylist_online.gif,
+	  icons/buddylist_online_server.gif, icons/calendar.png,
+	  icons/chat.gif, icons/connect.png, icons/context_search.gif,
+	  icons/delete.gif, icons/disconnect.png, icons/flag.gif,
+	  icons/info.gif, icons/log.gif, icons/offline.gif,
+	  icons/offline_server.gif, icons/online.gif,
+	  icons/online_server.gif, icons/search.gif, icons/synergy.gif,
+	  icons/toolbar_calendar.png, icons/toolbar_connect.png,
+	  icons/toolbar_disconnect.png, icons/view_conversations.gif,
+	  icons/view_developer.gif, icons/view_filehistory.gif,
+	  icons/view_linevis.gif, icons/view_recommendations.gif,
+	  src/net/sourceforge/synergy/Constants.java,
+	  src/net/sourceforge/synergy/Developer.java,
+	  src/net/sourceforge/synergy/Dialogs.java,
+	  src/net/sourceforge/synergy/Project.java,
+	  src/net/sourceforge/synergy/ReceiveObject.java,
+	  src/net/sourceforge/synergy/ReceivePulse.java,
+	  src/net/sourceforge/synergy/SendObject.java,
+	  src/net/sourceforge/synergy/SendPulse.java,
+	  src/net/sourceforge/synergy/Synergy.java,
+	  src/net/sourceforge/synergy/UtilityFunctions.java,
+	  src/net/sourceforge/synergy/codecalendar/CodeCalendar.java,
+	  src/net/sourceforge/synergy/codecalendar/CodeCalendarLauncher.java,
+	  src/net/sourceforge/synergy/codecalendar/DayCalendarData.java,
+	  src/net/sourceforge/synergy/codecalendar/MultiLineToolTipUI.java,
+	  src/net/sourceforge/synergy/codecalendar/TextAreaRenderer.java,
+	  src/net/sourceforge/synergy/views/ChatView.java,
+	  src/net/sourceforge/synergy/views/DeveloperActionFilter.java,
+	  src/net/sourceforge/synergy/views/DeveloperContentProvider.java,
+	  src/net/sourceforge/synergy/views/DeveloperFile.java,
+	  src/net/sourceforge/synergy/views/DeveloperLabelProvider.java,
+	  src/net/sourceforge/synergy/views/DeveloperView.java,
+	  src/net/sourceforge/synergy/views/FileHistoryView.java,
+	  src/net/sourceforge/synergy/views/FileRecommendationsView.java,
+	  src/net/sourceforge/synergy/views/LineVisualiser.java, .project,
+	  plugin.xml, META-INF/MANIFEST.MF,
+	  src/net/sourceforge/synergy/actions/ElvinConsumer.java,
+	  src/net/sourceforge/synergy/actions/ElvinConsumerAction.java,
+	  src/net/sourceforge/synergy/actions/ElvinProducer.java,
+	  src/net/sourceforge/synergy/actions/SendCodePopupAction.java,
+	  src/net/sourceforge/synergy/actions/WebSearchAction.java,
+	  src/net/sourceforge/synergy/data/DataUpdate.java,
+	  src/net/sourceforge/synergy/data/SQLInterface.java,
+	  src/net/sourceforge/synergy/linevisactions/CodeWatcher.java,
+	  src/net/sourceforge/synergy/linevisactions/EditorBook.java,
+	  src/net/sourceforge/synergy/linevisactions/EditorFunctions.java,
+	  src/net/sourceforge/synergy/linevisactions/EditorLine.java,
+	  src/net/sourceforge/synergy/linevisactions/EditorPage.java,
+	  src/net/sourceforge/synergy/linevisactions/Graph.java,
+	  src/net/sourceforge/synergy/perspective/Perspective.java,
+	  src/net/sourceforge/synergy/perspective/SynergyPerspective.java,
+	  src/net/sourceforge/synergy/prefs/GeneralPage.java,
+	  src/net/sourceforge/synergy/prefs/GeneralRootPage.java,
+	  src/net/sourceforge/synergy/prefs/WebSearchPage.java,
+	  src/net/sourceforge/synergy/prefs/WebSearchRootPage.java:
+	  * MAJOR REFACTORING AND RENAMING OF PROJECT. *
+
+	  Various major tidying up, added further icons and improved icon
+	  structure in the icons folder.
+
+	  All debugging output silenced and preparing for final commit.
+
+2006-02-20 10:07  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-02-20 01:25  colin
+
+	* plugin.xml, icons/calendar.png,
+	  src/org/eclipse/examples/test/views/DeveloperView.java: Ok, I
+	  couldn't be bother fixing the bugs with the Graph this weekend
+	  (Sorry) but I've made a Code Calendar instead ;-)  It's not quite
+	  finished, the only month on view is Febuarary and its not
+	  particularly fancy. (Theres a bug with the Calendar class which
+	  is really messing me about)  It's another pretty useless
+	  visualisation really!  It's only particularly threaded, so it
+	  still hangs slightly when its opened.
+
+2006-02-16 13:58  colin
+
+	* src/org/eclipse/examples/test/UtilityFunctions.java: Graph now
+	  supports multiple files.
+
+2006-02-16 08:21  gavin
+
+	* src/org/eclipse/examples/test/Dialogs.java: Sorted a tables
+	  layout.
+
+2006-02-16 00:31  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-02-16 00:30  gavin
+
+	* src/org/eclipse/examples/test/: Dialogs.java,
+	  views/DeveloperView.java, views/FileHistoryView.java,
+	  views/FileRecommendationsView.java:
+	  Factored a bunch of random dialogs into the "Dialogs.java" file,
+	  sorted some dialog layouts, removed buttons, tidied up some stuff
+	  a bit.
+
+2006-02-15 23:01  gavin
+
+	* plugin.xml, icons/add.gif, icons/dir.gif, icons/genericFile.gif,
+	  icons/history_dir.gif, icons/history_file.gif,
+	  icons/history_modified.gif, icons/history_project.gif,
+	  icons/history_watched.gif, icons/modifiedFile.gif,
+	  icons/project.gif, icons/transmit.gif, icons/watchedFile.gif,
+	  src/org/eclipse/examples/test/Dialogs.java,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducerAction.java,
+	  src/org/eclipse/examples/test/actions/Examples.java,
+	  src/org/eclipse/examples/test/actions/ExamplesAction.java,
+	  src/org/eclipse/examples/test/actions/FlagCodePopupAction.java,
+	  src/org/eclipse/examples/test/actions/SendCodePopupAction.java,
+	  src/org/eclipse/examples/test/views/DeveloperView.java,
+	  src/org/eclipse/examples/test/views/FileHistoryView.java,
+	  src/org/eclipse/examples/test/views/FilerecommenderTest.java,
+	  src/org/eclipse/examples/test/views/LineVisualiser.java,
+	  src/org/eclipse/examples/test/UtilityFunctions.java:
+	  Removed "Examples.java", "ExamplesAction.java",
+	  "FilerecommenderTest.java" and finally "FlagCodePopupAction.java"
+	  since nobody could get markers working.
+
+	  Renamed a bunch of icons, removed 'Add Developer' from the
+	  developer view, created "Dialogs.java" and moved some stuff from
+	  UtilityFunctions there.
+
+	  Preparing for next commit.
+
+2006-02-15 21:53  danny
+
+	* src/org/eclipse/examples/test/views/FileRecommendationsView.java:
+	  trying without success to make it refresh
+
+2006-02-15 19:49  danny
+
+	* plugin.xml,
+	  src/org/eclipse/examples/test/views/FileRecommendationsView.java:
+	  File Recommendations TODO: fix crash if it has focus on startup
+	  TODO: refresh view on activefile changing
+
+2006-02-14 13:28  colin
+
+	* src/org/eclipse/examples/test/views/LineVisualiser.java: Handling
+	  adding single new lines at a time now added.	The testing I've
+	  done with it has been very limited so don't take this as a big
+	  update.
+
+2006-02-14 11:42  colin
+
+	* src/org/eclipse/examples/test/: TestPlugin.java,
+	  views/LineVisualiser.java: Changes to TestPlugin to stop some
+	  null pointer exs
+
+2006-02-14 08:54  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-02-14 08:52  gavin
+
+	* .classpath, .cvsignore, misc/classpath-sample,
+	  src/org/eclipse/examples/test/SendPulse.java,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/UtilityFunctions.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/actions/FlagCodePopupAction.java,
+	  src/org/eclipse/examples/test/data/SQLInterface.java,
+	  src/org/eclipse/examples/test/views/FileHistoryView.java,
+	  src/org/eclipse/examples/test/views/FilerecommenderTest.java:
+	  Changed the way TestPlugin.logError() is handled, which can now
+	  be passed a new throwable which will appear in the dialog when
+	  the error log item is double clicked.
+
+	  Added most the jar files needed, removed .cvsignore,
+	  classpath-sample and committed .classpath to link to the relative
+	  locations. Should help when packaging the plugin up and save a
+	  lot of bother.
+
+2006-02-13 17:13  gavin
+
+	* misc/table_setup.sql,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/data/DataUpdate.java,
+	  src/org/eclipse/examples/test/data/SQLInterface.java,
+	  src/org/eclipse/examples/test/views/FileHistoryView.java:
+	  Modified the schema slightly to accomodate for a history of more
+	  changes.
+
+	  Various queries changed, including a possible problem which has
+	  been highlighted in SQLInterface.java.
+
+2006-02-13 01:36  colin
+
+	* src/org/eclipse/examples/test/views/LineVisualiser.java: Version
+	  2 of the codewatcher.  no new features, but MUCH MUCH better code
+	  and very flexible.
+
+2006-02-09 22:21  chris
+
+	* src/org/eclipse/examples/test/views/FileHistoryView.java:
+	  Primitive Dialog added to FileHistoryView
+
+2006-02-09 22:03  chris
+
+	* src/org/eclipse/examples/test/views/DeveloperView.java: Borders
+	  removed from info dialog
+
+2006-02-09 13:34  gavin
+
+	* META-INF/MANIFEST.MF, misc/classpath-sample: Readded
+	  classpath-sample.
+
+2006-02-09 01:22  chris
+
+	* META-INF/MANIFEST.MF, misc/classpath-sample,
+	  src/org/eclipse/examples/test/views/DeveloperView.java: Inserted
+	  partial dialog for user in DeveloperView, gives a general idea of
+	  possible layout
+
+2006-02-07 13:50  gavin
+
+	* src/org/eclipse/examples/test/views/FileHistoryView.java: Tidied
+	  up some horrible pointless code blocks to use continue instead.
+
+2006-02-07 11:46  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-02-07 11:45  gavin
+
+	* misc/table_setup.sql,
+	  src/org/eclipse/examples/test/data/DataAccess.java: Removed
+	  'DataAccess.java', updated 'table_setup.sql' to reflect new
+	  schema.
+
+2006-02-06 19:03  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-02-06 19:01  gavin
+
+	* icons/dir.gif, icons/genericFile.gif, icons/modifiedFile.gif,
+	  icons/project.gif, icons/watchedFile.gif,
+	  src/org/eclipse/examples/test/UtilityFunctions.java,
+	  src/org/eclipse/examples/test/views/FileHistoryView.java:
+	  Added a bunch of icons to the file history which basically
+	  indicate the status of the item on the tree list.
+
+	  File history now excludes any hidden project names, ie
+	  '.metadata' and ignores class files within project directories.
+
+	  New method in UtilityFunctions, 'getFileExtension()' since
+	  java.io.file has no such object method.
+
+2006-02-05 16:18  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-02-05 16:18  gavin
+
+	* icons/offline.gif, icons/offline_server.gif, icons/online.gif,
+	  icons/online_server.gif,
+	  src/org/eclipse/examples/test/Environment.java,
+	  src/org/eclipse/examples/test/ReceivePulse.java,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/UtilityFunctions.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducerAction.java,
+	  src/org/eclipse/examples/test/actions/FlagCodePopupAction.java,
+	  src/org/eclipse/examples/test/actions/SendCodePopupAction.java,
+	  src/org/eclipse/examples/test/actions/WebSearchAction.java,
+	  src/org/eclipse/examples/test/data/SQLInterface.java,
+	  src/org/eclipse/examples/test/views/ChatView.java,
+	  src/org/eclipse/examples/test/views/DeveloperContentProvider.java,
+	  src/org/eclipse/examples/test/views/DeveloperFile.java,
+	  src/org/eclipse/examples/test/views/DeveloperLabelProvider.java,
+	  src/org/eclipse/examples/test/views/DeveloperView.java:
+
+	  Modified the concept of "all" and renamed it to the current elvin
+	  server on the buddy list. (i.e. coldwired.com) Gave it a custom
+	  icon and custom info page, paving the way for the fancy dialogs
+	  that will come. Buddy icon has been altered also to a better
+	  looking one.
+
+	  (!) Sorted out the way user status was lost when the list was
+	  'redrawn' every time something was added or deleted. This now
+	  behaves the way it should, and looks very natural.
+
+	  Removed "Environment.java" as it was a useless class. Added a
+	  method in TestPlugin for the users home directory, this allows
+	  the buddy list to be stored always in home and not just from the
+	  active directory where eclipse was run.  Buddy list has been
+	  renamed with a prefixing dot
+	  ('developers.txt'->'.eclipse_developers.txt') as to appear
+	  hidden. Not tested in windows how this will work out, but can be
+	  renamed if it causes problems.
+
+	  Removed various deprecated warnings in "DeveloperView.java" by
+	  replacing them with the better equivalent, EVERY class should now
+	  be free of warnings including ElvinConsumer.java, etc.
+
+	  Uncommented out most of FlagCodePopupAction.java until it's
+	  looked at again.
+
+	  Other miscellaneous tidy ups in various classes.
+
+2006-02-05 14:04  gavin
+
+	* src/org/eclipse/examples/test/views/FileHistoryView.java: Tidy
+	  overlooked fixed to the error checking code for file history
+	  view.
+
+2006-02-04 11:15  gavin
+
+	* src/org/eclipse/examples/test/: TestPlugin.java,
+	  perspective/TestPerspective.java: Added PDE runtime error log to
+	  the custom perspective.
+
+	  Added logWarning() and tidied up the database error log output to
+	  show the name of the file being processed from
+	  IResourceChangeListener.
+
+2006-02-04 00:11  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-02-04 00:11  gavin
+
+	* src/org/eclipse/examples/test/TestPlugin.java,
+	  META-INF/MANIFEST.MF,
+	  src/org/eclipse/examples/test/UtilityFunctions.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/data/SQLInterface.java,
+	  src/org/eclipse/examples/test/views/FileHistoryView.java,
+	  src/org/eclipse/examples/test/views/LineVisualiser.java:
+	  Handled a bunch of exceptions that could occurr if the database
+	  wasn't able to connect. Presented them nicely in the "Error view"
+	  without throwing stack traces unless the error is really odd.
+
+	  Threaded up the "file history" view when it gets the initial data
+	  from the database just for safety. Handled various null pointers
+	  that were getting thrown when certain items were expanded with no
+	  data from the database to use.
+
+	  Errors mainly presented in dialogs and relayed through pde error
+	  log as above.
+
+2006-02-02 21:43  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-02-02 21:42  gavin
+
+	* plugin.xml, icons/buddy.png, icons/buddylist.gif,
+	  src/org/eclipse/examples/test/Developer.java,
+	  src/org/eclipse/examples/test/Environment.java,
+	  src/org/eclipse/examples/test/Project.java,
+	  src/org/eclipse/examples/test/ReceiveObject.java,
+	  src/org/eclipse/examples/test/ReceivePulse.java,
+	  src/org/eclipse/examples/test/SendObject.java,
+	  src/org/eclipse/examples/test/SendPulse.java,
+	  src/org/eclipse/examples/test/StatusBar.java,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/UtilityFunctions.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducer.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducerAction.java,
+	  src/org/eclipse/examples/test/actions/Examples.java,
+	  src/org/eclipse/examples/test/actions/ExamplesAction.java,
+	  src/org/eclipse/examples/test/actions/FlagCodePopupAction.java,
+	  src/org/eclipse/examples/test/actions/SendCodePopupAction.java,
+	  src/org/eclipse/examples/test/actions/WebSearchAction.java,
+	  src/org/eclipse/examples/test/data/DataAccess.java,
+	  src/org/eclipse/examples/test/data/DataUpdate.java,
+	  src/org/eclipse/examples/test/data/SQLInterface.java,
+	  src/org/eclipse/examples/test/perspective/TestPerspective.java,
+	  src/org/eclipse/examples/test/prefs/GeneralPage.java,
+	  src/org/eclipse/examples/test/prefs/GeneralRootPage.java,
+	  src/org/eclipse/examples/test/prefs/WebSearchPage.java,
+	  src/org/eclipse/examples/test/prefs/WebSearchRootPage.java,
+	  src/org/eclipse/examples/test/views/DeveloperLabelProvider.java,
+	  src/org/eclipse/examples/test/views/DeveloperView.java,
+	  src/org/eclipse/examples/test/views/FileHistoryView.java,
+	  src/org/eclipse/examples/test/views/LineVisualiser.java:
+	  Implemented the update and remove database actions.
+
+	  Mass amount of commenting and cleaning up. Various methods
+	  removed and used the static functions in TestPlugin instead,
+	  namely getImageDescriptor() which was implemented countless times
+	  elsewhere for no reason.
+
+	  Inserts loads of java-doc style comments, source formatted
+	  various files and tidied up various warnings.
+
+	  Changed the buddy list icon to a gif, left the connect/disconnect
+	  as pngs for now due to some issues while trying to change to gif.
+	  Will be hopefully sorted later.
+
+2006-02-02 02:23  colin
+
+	* NOTES: added forementioned note.
+
+2006-02-02 00:28  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-02-02 00:28  gavin
+
+	* src/org/eclipse/examples/test/: TestPlugin.java,
+	  data/DataUpdate.java, data/SQLInterface.java,
+	  views/FileHistoryView.java:
+	  Implemented the first of the resource watching and database
+	  updating. Currently only insert has been implemented, but
+	  change/delete will be soon. Works really well, and is speedier
+	  than original thought. The filehistoryviewer can be refreshed to
+	  reflect the changes.
+
+	  Plugin connects to the database on startup and terminates the
+	  connection on shutdown. This perhaps could be changed to the way
+	  the elvin connection is currently handled. Or both could be
+	  intergrated into a single "connect" action.
+
+	  New class 'DataUpdate' to handle the various update methods than
+	  can take place on the update.
+
+2006-01-31 23:10  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-01-31 23:09  gavin
+
+	* META-INF/MANIFEST.MF,
+	  src/org/eclipse/examples/test/Developer.java,
+	  src/org/eclipse/examples/test/Project.java,
+	  src/org/eclipse/examples/test/ReceiveObject.java,
+	  src/org/eclipse/examples/test/ReceivePulse.java,
+	  src/org/eclipse/examples/test/SendObject.java,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/UtilityFunctions.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducer.java,
+	  src/org/eclipse/examples/test/actions/ReceiveObject.java,
+	  src/org/eclipse/examples/test/actions/SendObject.java,
+	  src/org/eclipse/examples/test/data/DataAccess.java,
+	  src/org/eclipse/examples/test/views/Developer.java,
+	  src/org/eclipse/examples/test/views/DeveloperActionFilter.java,
+	  src/org/eclipse/examples/test/views/DeveloperContentProvider.java,
+	  src/org/eclipse/examples/test/views/DeveloperFile.java,
+	  src/org/eclipse/examples/test/views/DeveloperView.java,
+	  src/org/eclipse/examples/test/views/FileHistoryView.java:
+	  Improved FileHistoryView to only get the contents when it is
+	  launched, thus getting over the hanging on every item expansion.
+	  Works pretty well.
+
+	  New class file 'Project' which can contain the name of the
+	  project in the database, related files, related files that other
+	  people have modified, and anything else which is deemed
+	  appropriate.
+
+	  Messed about with some more package locations. Namely
+	  'Project.java' and 'Developer.java' moved to the main package. We
+	  should probably all agree on some standard for this.
+
+	  Commited the first of the saving code in TestPlugin.java. Doesn't
+	  work yet, though.
+
+2006-01-31 19:26  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-01-31 15:33  colin
+
+	* META-INF/MANIFEST.MF,
+	  src/org/eclipse/examples/test/perspective/TestPerspective.java,
+	  src/org/eclipse/examples/test/views/LineVisualiser.java: Added a
+	  rescale listener to view.  Fix bug fixes to threads.	TO DO:
+	  implement clear canvas.
+
+2006-01-31 11:08  colin
+
+	* plugin.xml: Added Code Vis view to plugin xml.
+
+2006-01-31 11:07  colin
+
+	* NOTES: added some notes.
+
+2006-01-31 11:06  colin
+
+	* src/org/eclipse/examples/test/views/LineVisualiser.java: Creates
+	  a view for drawing the graph. Not working in my house but should
+	  bea simple fix in the lab.  (Think I'm missing something really
+	  obvious)
+
+2006-01-31 09:23  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-01-31 09:22  gavin
+
+	* src/org/eclipse/examples/test/: CustomTreeLabelProvider.java,
+	  Environment.java, Perspective.java, ReceivePulse.java,
+	  SendPulse.java, TestPlugin.java, TrackerCheckStatus.java,
+	  TrackerSendStatus.java, actions/ElvinConsumer.java,
+	  actions/ElvinConsumerAction.java, perspective/Perspective.java,
+	  views/DeveloperFile.java, views/DeveloperLabelProvider.java,
+	  views/DeveloperView.java: Tidied up a bunch of classes, renamed
+	  and move some of their packages around to make things more
+	  organised.
+
+	  Things to do with actions, in the actions package, same with
+	  views, perspectives, etc. Files with no obvious package name go
+	  in the default package.
+
+2006-01-31 00:00  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-01-31 00:00  gavin
+
+	* src/org/eclipse/examples/test/views/FileHistoryView.java:
+	  Some more history view stuff. Basically, it checks each file
+	  against the database and bolds/italics any file that it
+	  considered in the database or editted by other people.
+
+	  It now also uses the full path of a file (i.e.
+	  src/actions/huh.java) to distinguish between various different
+	  files so all in all is amazingly better than it was.
+
+	  More advanced sql queries to come, perhaps with colours but a few
+	  annoyances to sort out. For any further details see the comments
+	  in the file.
+
+2006-01-30 18:34  gavin
+
+	* plugin.xml, src/org/eclipse/examples/test/TrackerSendStatus.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/HistoryViewer.java,
+	  src/org/eclipse/examples/test/actions/HistoryViewerAction.java,
+	  src/org/eclipse/examples/test/perspective/TestPerspective.java,
+	  src/org/eclipse/examples/test/views/FileHistoryView.java: Turned
+	  "FileHistory" into "FileHistoryView" so now integrates much nicer
+	  with the rest of the other views.
+
+	  Updated the perspective to reflect this.
+
+	  Various changes to some of the text that was being passed to
+	  setStatus().
+
+2006-01-30 09:18  gavin
+
+	* src/org/eclipse/examples/test/: Environment.java,
+	  TestPlugin.java: Sorted some default prefs.
+
+2006-01-29 19:11  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-01-29 19:10  gavin
+
+	* README, plugin.xml, icons/log.gif,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/TrackerCheckStatus.java,
+	  src/org/eclipse/examples/test/TrackerSendStatus.java,
+	  src/org/eclipse/examples/test/UtilityFunctions.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducer.java,
+	  src/org/eclipse/examples/test/actions/FlagCodePopupAction.java,
+	  src/org/eclipse/examples/test/actions/HistoryViewer.java,
+	  src/org/eclipse/examples/test/actions/HistoryViewerAction.java,
+	  src/org/eclipse/examples/test/actions/SendObject.java,
+	  src/org/eclipse/examples/test/actions/WebSearchAction.java,
+	  src/org/eclipse/examples/test/data/DataAccess.java,
+	  src/org/eclipse/examples/test/data/SQLInterface.java,
+	  src/org/eclipse/examples/test/views/DeveloperView.java:
+	  Added a new 'History Viewer' which will show a simple file list
+	  of all the files in the current projects. Double clicking this
+	  does a query on the database and will find out who and when it
+	  was last modified. Will eventually become a view I think.
+
+	  Various new methods, and a new SQLInterface class added for the
+	  above. Coldwired 'plugin' database has a few more tables with
+	  some test information in it. New 'log' icon.
+
+	  Fixed and improved 'Info..', which still using a standard dialog
+	  but will eventually be upgraded to something nicer. Now gives the
+	  current open project, line number in addition to the file
+	  currently being looked at. Still a few bugs to iron out though.
+
+	  Numerous other things changed and tweaked as standard. CVS
+	  history for details.
+
+2006-01-27 13:42  gavin
+
+	* .settings/: org.eclipse.jdt.core.prefs, org.eclipse.jdt.ui.prefs:
+	  Java 5 specific project settings.
+
+2006-01-21 14:38  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-01-21 14:37  gavin
+
+	* NOTES, src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/UtilityFunctions.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/SendCodePopupAction.java,
+	  src/org/eclipse/examples/test/actions/WebSearchAction.java,
+	  src/org/eclipse/examples/test/data/DataAccess.java,
+	  src/org/eclipse/examples/test/views/ChatView.java: Changed the
+	  way styled text is handled, it now styles the amount of
+	  characters before the first ':' which works pretty well.
+
+	  Changed 'UtilityFunctions.java' to be static and use static
+	  variables, preventing things having to do "new
+	  UtilityFunctions()" for completely no reason.
+
+	  Added a 'NOTES' file as a handy reminder of what was discussed
+	  via comments and changed. Probably some more stuff from CVS
+	  history that should be added here.
+
+2006-01-21 13:38  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-01-21 13:37  gavin
+
+	* .project, README, plugin.xml, icons/connect.png,
+	  icons/disconnect.gif, icons/disconnect.png, icons/listen.gif,
+	  src/org/eclipse/examples/test/TestConsts.java,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/TrackerCheckStatus.java,
+	  src/org/eclipse/examples/test/UtilityFunctions.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducer.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducerAction.java,
+	  src/org/eclipse/examples/test/actions/Examples.java,
+	  src/org/eclipse/examples/test/actions/ReceiveObject.java,
+	  src/org/eclipse/examples/test/actions/WebSearchAction.java,
+	  src/org/eclipse/examples/test/data/DataAccess.java,
+	  src/org/eclipse/examples/test/prefs/GeneralPage.java,
+	  src/org/eclipse/examples/test/prefs/WebSearchPage.java,
+	  src/org/eclipse/examples/test/views/ChatView.java,
+	  src/org/eclipse/examples/test/views/Developer.java,
+	  src/org/eclipse/examples/test/views/DeveloperComparable.java,
+	  src/org/eclipse/examples/test/views/DeveloperFile.java,
+	  src/org/eclipse/examples/test/views/DeveloperView.java: Added
+	  preference pages for mysql database, user, password.
+
+	  New 'send signal' interface dialog for debugging purposes.
+
+	  Sort developer sorting by status in Developer, removed loads of
+	  uneeded code and deleted 'DeveloperComparable.java' since it was
+	  an unneeded class.
+
+	  New icons for connect/disconnect (png's though just to annoy
+	  Colin :))
+
+	  Added some stuff in the README about getting the internal browser
+	  working (straight copy paste from the FAQ.)
+
+	  Internal brower been modified to open in a new editor instead of
+	  a view.
+
+	  Search preferences now make use of '%s' for the search query
+	  which is more convienent for query strings.
+
+	  Lots of import organising, tidying random stuff up as always.
+
+2006-01-16 10:53  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-01-16 10:52  gavin
+
+	* src/org/eclipse/examples/test/views/ChatView.java: Test to see if
+	  we're connected to the server before sending a message. Otherwise
+	  just echo's a simple message indication we're not.
+
+2006-01-16 10:39  gavin
+
+	* src/org/eclipse/examples/test/: TrackerCheckStatus.java,
+	  UtilityFunctions.java, actions/SendCodePopupAction.java,
+	  views/DeveloperView.java: Sorted out some issues with the
+	  checkTimeouts() function and sendcode() functions if the
+	  developer view isn't visible.
+
+	  The developer view needs to be visible in order for
+	  getOnlineUsers() to work.
+
+2006-01-16 00:25  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-01-16 00:24  gavin
+
+	* src/org/eclipse/examples/test/: TrackerCheckStatus.java,
+	  UtilityFunctions.java, actions/ElvinConsumer.java,
+	  actions/SendCodePopupAction.java, views/Developer.java,
+	  views/DeveloperComparable.java, views/DeveloperView.java: Wrote a
+	  getOnlineUsers() method in UtilityFunctions.
+
+	  Added a fancy sendCode() function that uses the above functions.
+
+	  Fixed a few bugs in TrackerCheckStatus, checkTimeouts() was
+	  setting people online if they timed out?!
+
+	  Various source tidying up and mega source -> format going on.
+
+	  Renamed various functions e.g. codeBox() is now receiveCode()
+
+2006-01-14 02:58  gavin
+
+	* ChangeLog:
+	  Updated changelog.
+
+2006-01-14 02:57  gavin
+
+	* icons/offline.png, icons/online.png,
+	  src/org/eclipse/examples/test/TrackerSendStatus.java,
+	  src/org/eclipse/examples/test/UtilityFunctions.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducer.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducerAction.java,
+	  src/org/eclipse/examples/test/actions/SendCodePopupAction.java,
+	  src/org/eclipse/examples/test/views/ChatView.java: Major tidy up
+	  of ChatView.java, loads of repeated code compacted into seperate
+	  classes.  - See sendMessage(), receivedMessage() - all references
+	  of setText() and the way it handles window updates removed, why
+	  use setText() to 'reset' the entire windows text when append()
+	  can do this and only 'appends' the last line to the text area.  -
+	  Structure of code in this file reads better at least.  - Message
+	  window now 'autoscrolls' and stops the bar from jumping to the
+	  top.	- Unused comments, stdout prints removed.  - Some weird
+	  focusing bugs removed, but still isn't perfect. (i.e. if the tab
+	  isn't open.)
+
+	  Various other changes to ElvinConsumer, ElvinProducer, etc, the
+	  "elvin://" prefix is now appended inside these methods so it can
+	  just be passed the string from prefs.
+
+	  Removed 'offline.png' and 'online.png'
+
+	  Other stuff I've forgotten.
+
+2006-01-13 12:28  colin
+
+	* src/org/eclipse/examples/test/views/ChatView.java: fixed design
+	  time error. sorry!
+
+2006-01-13 12:04  colin
+
+	* src/org/eclipse/examples/test/views/ChatView.java: added text
+	  styles in the conversation windows.
+
+2006-01-13 09:52  colin
+
+	* src/org/eclipse/examples/test/views/ChatView.java: Non working
+	  update (will compile) but I'll fix this afternoon in the lab.
+
+2006-01-13 00:42  danny
+
+	* src/org/eclipse/examples/test/views/DeveloperComparable.java:
+	  commented green before red code
+
+2006-01-12 23:09  gavin
+
+	* ChangeLog, misc/cvs-snapshot.sh: Further changelog, bash script
+	  added in misc/.
+
+2006-01-12 22:58  danny
+
+	* src/org/eclipse/examples/test/views/DeveloperComparable.java:
+	  THAT
+
+2006-01-12 19:22  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-01-12 19:21  gavin
+
+	* src/org/eclipse/examples/test/data/DataAccess.java, README,
+	  classpath-sample, misc/classpath-sample, misc/table_setup.sql,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/views/Developer.java: DataAccess
+	  filled with SQL query stuff.
+
+2006-01-12 15:36  danny
+
+	* src/org/eclipse/examples/test/views/: Developer.java,
+	  DeveloperComparable.java, DeveloperFile.java: Sorted Developer
+	  List
+
+2006-01-12 15:23  colin
+
+	* src/org/eclipse/examples/test/TrackerCheckStatus.java: [no log
+	  message]
+
+2006-01-12 15:23  colin
+
+	* META-INF/MANIFEST.MF,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducer.java,
+	  src/org/eclipse/examples/test/data/DataAccess.java: Added
+	  database access class.  Removed annoying outputs to stdout for
+	  debugging.
+
+2006-01-12 14:09  danny
+
+	* src/org/eclipse/examples/test/views/ChatView.java: Never give out
+	  your password or credit card number in an instant message
+	  conversation. ;-)
+
+2006-01-12 13:51  danny
+
+	* src/org/eclipse/examples/test/TrackerCheckStatus.java: [no log
+	  message]
+
+2006-01-12 13:45  danny
+
+	* src/org/eclipse/examples/test/: TrackerCheckStatus.java,
+	  views/DeveloperView.java: Let the Hacking Begin :-D
+
+2006-01-12 12:00  colin
+
+	* src/org/eclipse/examples/test/: SendObject.java,
+	  TrackerSendStatus.java, actions/ElvinConsumer.java,
+	  actions/ElvinConsumerAction.java, actions/ElvinProducer.java,
+	  actions/ReceiveObject.java, actions/SendObject.java: added
+	  sending objects through elvin
+
+2006-01-12 03:13  colin
+
+	* src/org/eclipse/examples/test/SendObject.java: Generates a Hex of
+	  ANY object (a few exceptions) prepares it for sending.  Decodes
+	  the received hex and builds the object again.
+
+	  TODO:  Send /Receive the hex String.
+
+2006-01-11 20:13  colin
+
+	* src/org/eclipse/examples/test/TrackerCheckStatus.java:
+	  offline.png to offline.gif
+
+2006-01-11 20:11  colin
+
+	* icons/offline.gif, icons/online.gif,
+	  src/org/eclipse/examples/test/CustomTreeLabelProvider.java,
+	  src/org/eclipse/examples/test/TrackerCheckStatus.java: Changed
+	  buddy icons to gifs because ImageDescriptor.createFromFile
+	  doesn't work on my machine for png's. (Hence other users could
+	  have the same problem)
+
+	  Transparency of gifs looks okay, i'll try and touch things up
+	  when i have time.
+
+2006-01-11 18:34  colin
+
+	* src/org/eclipse/examples/test/TrackerCheckStatus.java: Finished
+	  the setOnline procedure.  We were setting the Developer variable
+	  online to true but we weren't changing it when we went offline.
+
+2006-01-11 18:21  colin
+
+	* src/org/eclipse/examples/test/actions/: DialogExamples.java,
+	  DialogExamplesAction.java, Examples.java, ExamplesAction.java:
+	  Being a bit anal, renamed DialogExamples to Examples, hopefully
+	  to encourage any type of example in the files.
+
+2006-01-11 17:00  gavin
+
+	* classpath-sample: [no log message]
+
+2006-01-11 15:28  gavin
+
+	* ChangeLog: 11/01/06 Changelog
+
+2006-01-11 15:01  gavin
+
+	* README: Added some extra info and a link to a screenshot.
+
+2006-01-11 15:00  gavin
+
+	* classpath-sample, src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/TrackerSendStatus.java: Fixed the
+	  hang on shutdown, changed the threads type to static which allows
+	  easy killing.
+
+	  Sorted out the fact that there might be no opened files hanging
+	  the pulse thread.
+
+2006-01-11 13:51  gavin
+
+	* README: README documenting the .classpath issues.
+
+2006-01-11 09:40  gavin
+
+	* classpath-sample: Sample classpath.
+
+2006-01-10 23:27  gavin
+
+	* src/org/eclipse/examples/test/: actions/FlagCodePopupAction.java,
+	  views/DeveloperView.java: Random tidyups.
+
+2006-01-10 22:51  gavin
+
+	* .classpath: Removed the .classpath, hopefully everything will be
+	  cheery now!
+
+2006-01-10 22:36  gavin
+
+	* ChangeLog, icons/buddy.png: New and improved buddy icon!
+
+2006-01-10 21:24  gavin
+
+	* icons/conngreen.gif, icons/connred.gif, icons/info.gif,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/TrackerCheckStatus.java,
+	  src/org/eclipse/examples/test/TrackerSendStatus.java,
+	  src/org/eclipse/examples/test/UtilityFunctions.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducer.java,
+	  src/org/eclipse/examples/test/views/ChatView.java,
+	  src/org/eclipse/examples/test/views/Developer.java,
+	  src/org/eclipse/examples/test/views/DeveloperView.java: Added
+	  'Info..' menu to the buddy list view.
+
+	  Returns the currently opened file, developers name, last ping.
+
+2006-01-10 18:20  gavin
+
+	* .classpath, src/org/eclipse/examples/test/TestConsts.java,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/prefs/GeneralPage.java,
+	  src/org/eclipse/examples/test/prefs/WebSearchPage.java: Mysql
+	  field in preferences added.
+
+2006-01-10 14:52  gavin
+
+	* .classpath,
+	  src/org/eclipse/examples/test/CustomTreeLabelProvider.java,
+	  src/org/eclipse/examples/test/TrackerCheckStatus.java,
+	  src/org/eclipse/examples/test/TrackerSendStatus.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/views/ChatView.java,
+	  src/org/eclipse/examples/test/views/Developer.java,
+	  src/org/eclipse/examples/test/views/DeveloperView.java:
+	  Miscellaneous tidying up.
+
+2006-01-10 14:26  colin
+
+	* .classpath,
+	  src/org/eclipse/examples/test/TrackerCheckStatus.java,
+	  src/org/eclipse/examples/test/CustomTreeLabelProvider.java,
+	  src/org/eclipse/examples/test/CustomTreeView.java,
+	  src/org/eclipse/examples/test/views/Developer.java,
+	  src/org/eclipse/examples/test/views/DeveloperView.java: fixed the
+	  offline users proc.
+
+2006-01-10 11:57  gavin
+
+	* .classpath, icons/offline.png, icons/online.png,
+	  src/org/eclipse/examples/test/CustomTreeView.java,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/TrackerCheckStatus.java,
+	  src/org/eclipse/examples/test/UtilityFunctions.java,
+	  src/org/eclipse/examples/test/actions/DialogExamples.java:
+	  Changed icons, stdout to logError()
+
+2006-01-10 10:21  gavin
+
+	* ChangeLog: Updated changelog.
+
+2006-01-10 10:21  gavin
+
+	* .classpath,
+	  src/org/eclipse/examples/test/TrackerCheckStatus.java,
+	  src/org/eclipse/examples/test/TrackerSendStatus.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/views/DeveloperContentProvider.java:
+	  Toggling offline now sets the entire buddy list to be offline.
+
+	  Tidied up some unneccessary stdout put.
+
+2006-01-10 02:58  colin
+
+	* src/org/eclipse/examples/test/TrackerCheckStatus.java: [no log
+	  message]
+
+2006-01-10 02:48  colin
+
+	* src/org/eclipse/examples/test/TrackerCheckStatus.java: [no log
+	  message]
+
+2006-01-10 02:45  colin
+
+	* src/org/eclipse/examples/test/TrackerCheckStatus.java: [no log
+	  message]
+
+2006-01-10 02:28  colin
+
+	* src/org/eclipse/examples/test/: TrackerCheckStatus.java,
+	  TrackerSendStatus.java: [no log message]
+
+2006-01-10 01:50  colin
+
+	* .classpath, src/org/eclipse/examples/test/CustomTreeView.java,
+	  src/org/eclipse/examples/test/TrackerCheckStatus.java,
+	  src/org/eclipse/examples/test/TrackerSendStatus.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducer.java,
+	  src/org/eclipse/examples/test/views/DeveloperView.java: [no log
+	  message]
+
+2006-01-09 20:49  gavin
+
+	* plugin.xml, icons/search.gif,
+	  src/org/eclipse/examples/test/TestConsts.java,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/actions/WebSearchAction.java,
+	  src/org/eclipse/examples/test/prefs/GeneralPage.java,
+	  src/org/eclipse/examples/test/prefs/GeneralRootPage.java,
+	  src/org/eclipse/examples/test/prefs/RootPage.java,
+	  src/org/eclipse/examples/test/prefs/WebSearchPage.java,
+	  src/org/eclipse/examples/test/prefs/WebSearchRootPage.java:
+	  Implemented a "Web search" which allows right clicking a
+	  selection and searching for it through the use of eclipse's
+	  internal browser.
+
+	  The query string is read from preferences so can easily
+	  accomodate different sites, koders.com, etc. (The default is
+	  google.)
+
+	  This should probably be improved upon to provide preset query
+	  strings for various different sites.
+
+2006-01-09 18:44  gavin
+
+	* ChangeLog: Changelog.
+
+2006-01-09 18:42  gavin
+
+	* .cvsignore: CVS ignore file to ignore the classpath which is
+	  specific to each installation.
+
+2006-01-09 09:20  gavin
+
+	* .classpath,
+	  src/org/eclipse/examples/test/actions/ElvinProducerAction.java,
+	  src/org/eclipse/examples/test/actions/SendCodePopupAction.java,
+	  src/org/eclipse/examples/test/views/ChatView.java: Fixed some
+	  elvin server strings been hardcoded and have them now read from
+	  preferences.
+
+2006-01-09 02:46  colin
+
+	* src/org/eclipse/examples/test/views/ChatView.java: [no log
+	  message]
+
+2006-01-09 02:38  colin
+
+	* src/org/eclipse/examples/test/views/ChatView.java: [no log
+	  message]
+
+2006-01-09 02:03  colin
+
+	* src/org/eclipse/examples/test/views/ChatView.java: [no log
+	  message]
+
+2006-01-09 01:59  colin
+
+	* src/org/eclipse/examples/test/views/ChatView.java: [no log
+	  message]
+
+2006-01-09 00:57  colin
+
+	* src/org/eclipse/examples/test/views/ChatView.java: [no log
+	  message]
+
+2006-01-09 00:17  colin
+
+	* src/org/eclipse/examples/test/views/ChatView.java: [no log
+	  message]
+
+2006-01-08 22:39  colin
+
+	* .classpath,
+	  src/org/eclipse/examples/test/actions/SendCodePopupAction.java:
+	  [no log message]
+
+2006-01-08 22:20  gavin
+
+	* src/org/eclipse/examples/test/: UtilityFunctions.java,
+	  views/DeveloperView.java: Random changes.
+
+2006-01-08 21:39  gavin
+
+	* src/org/eclipse/examples/test/: actions/ElvinProducer.java,
+	  views/ChatView.java, views/DeveloperView.java: Made the
+	  selections from developerview open the tabs and focus even if it
+	  isn't opened.
+
+2006-01-08 21:32  colin
+
+	* icons/conngreen.gif, icons/connred.gif,
+	  src/org/eclipse/examples/test/CustomTreeView.java,
+	  src/org/eclipse/examples/test/views/DeveloperView.java: [no log
+	  message]
+
+2006-01-08 19:26  colin
+
+	* src/org/eclipse/examples/test/UtilityFunctions.java: removed some
+	  crap.
+
+2006-01-08 19:22  colin
+
+	* src/org/eclipse/examples/test/views/ChatView.java: [no log
+	  message]
+
+2006-01-08 15:42  gavin
+
+	* src/org/eclipse/examples/test/: prefs/GeneralPage.java,
+	  views/ChatView.java, views/DeveloperView.java: Few other minor
+	  changes, most notably ChatView's FillLayout has been changed to a
+	  GridLayout which keeps the elements nicely alligned and fill the
+	  entire view.
+
+2006-01-08 14:07  gavin
+
+	* .classpath, plugin.xml, icons/add.gif, icons/buddy.png,
+	  icons/chat.gif, icons/delete.gif,
+	  src/org/eclipse/examples/test/Environment.java,
+	  src/org/eclipse/examples/test/Perspective.java,
+	  src/org/eclipse/examples/test/TestConsts.java,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/UtilityFunctions.java,
+	  src/org/eclipse/examples/test/actions/DialogExamples.java,
+	  src/org/eclipse/examples/test/actions/DialogExamplesAction.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/actions/FlagCodePopupAction.java,
+	  src/org/eclipse/examples/test/actions/OutputChatWindow.java,
+	  src/org/eclipse/examples/test/perspective/TestPerspective.java,
+	  src/org/eclipse/examples/test/views/ChatView.java,
+	  src/org/eclipse/examples/test/views/Developer.java,
+	  src/org/eclipse/examples/test/views/DeveloperActionFilter.java,
+	  src/org/eclipse/examples/test/views/DeveloperContentProvider.java,
+	  src/org/eclipse/examples/test/views/DeveloperFile.java,
+	  src/org/eclipse/examples/test/views/DeveloperView.java,
+	  src/org/eclipse/examples/test/views/ListenerView.java,
+	  src/org/eclipse/examples/test/views/SampleView.java,
+	  src/org/eclipse/examples/test/views/Word.java,
+	  src/org/eclipse/examples/test/views/WordActionDelegate.java,
+	  src/org/eclipse/examples/test/views/WordActionFilter.java,
+	  src/org/eclipse/examples/test/views/WordContentProvider.java,
+	  src/org/eclipse/examples/test/views/WordFile.java,
+	  src/org/eclipse/examples/test/views/WordView.java: Major class
+	  renames and refactoring.
+
+	  Icons now present instead of showing red boxes.
+
+	  Source cleanups, commenting style, indentation and double
+	  clicking a new developer switches to the conversations view.
+
+	  Other Misc.
+
+2006-01-07 21:44  colin
+
+	* src/org/eclipse/examples/test/: UtilityFunctions.java,
+	  actions/ElvinConsumer.java, actions/ElvinConsumerAction.java,
+	  actions/OutputChatWindow.java, views/ChatView.java: [no log
+	  message]
+
+2006-01-07 18:24  colin
+
+	* src/org/eclipse/examples/test/views/: ChatView.java,
+	  WordView.java: [no log message]
+
+2006-01-07 17:33  colin
+
+	* .classpath, plugin.xml,
+	  src/org/eclipse/examples/test/Environment.java,
+	  src/org/eclipse/examples/test/Perspective.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/perspective/TestPerspective.java,
+	  src/org/eclipse/examples/test/views/ChatView.java,
+	  src/org/eclipse/examples/test/views/ListenerView.java,
+	  src/org/eclipse/examples/test/views/WordContentProvider.java,
+	  src/org/eclipse/examples/test/views/WordView.java: [no log
+	  message]
+
+2005-12-31 13:12  gavin
+
+	* src/org/eclipse/examples/test/actions/ElvinConsumerAction.java:
+	  [no log message]
+
+2005-12-31 01:17  gavin
+
+	* icons/disconnect.gif,
+	  src/org/eclipse/examples/test/Environment.java,
+	  src/org/eclipse/examples/test/TestConsts.java,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/prefs/GeneralPage.java: Preference
+	  page implemented and working, remembering values given (such as
+	  the server address, etc.)
+
+	  Server connect button now 'toggles' so you can't connect multiple
+	  times and recieve multiple copies of the same event. The connect
+	  process also handles connection timeouts sanely without crashing
+	  eclipse.
+
+	  New disconnect icon introduced and probably some other stuff I
+	  forgot to mention.
+
+2005-12-30 22:13  gavin
+
+	* plugin.xml, icons/bitinglizard.gif, icons/endkfunk.gif,
+	  icons/endnfish.gif, icons/engrdrop.gif, icons/enrabite.gif,
+	  icons/ensktail.gif, icons/flag.gif, icons/listen.gif,
+	  icons/transmit.gif,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/UtilityFunctions.java,
+	  src/org/eclipse/examples/test/actions/EditorPopupAction.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducer.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducerAction.java,
+	  src/org/eclipse/examples/test/actions/FlagCodePopupAction.java,
+	  src/org/eclipse/examples/test/actions/SendCodePopupAction.java,
+	  src/org/eclipse/examples/test/prefs/GeneralPage.java,
+	  src/org/eclipse/examples/test/prefs/RootPage.java: Major code
+	  rewrites, proper icons and better descriptions added.  Tried to
+	  get some marker stuff going, currently needs some more work
+	  however.
+
+2005-12-05 22:20  gavin
+
+	* plugin.xml, src/org/eclipse/examples/test/StatusBar.java,
+	  src/org/eclipse/examples/test/UtilityFunctions.java,
+	  src/org/eclipse/examples/test/actions/DialogExamples.java,
+	  src/org/eclipse/examples/test/actions/DialogExamplesAction.java,
+	  src/org/eclipse/examples/test/actions/EditorPopupAction.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducer.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducerAction.java,
+	  src/org/eclipse/examples/test/views/SampleView.java,
+	  src/org/eclipse/examples/test/views/WordContentProvider.java,
+	  src/org/eclipse/examples/test/views/WordView.java: Tidied up
+	  loads of inefficient shit.
+
+2005-11-28 22:12  gavin
+
+	* src/org/eclipse/examples/test/actions/ElvinConsumer.java: Added
+	  some fancy "code received" dialog for receiving code. (Doesn't do
+	  anything useful yet, just pretty.)
+
+2005-11-27 09:39  gavin
+
+	* src/org/eclipse/examples/test/actions/EditorPopupAction.java:
+	  Tidied up some stuff.
+
+2005-11-27 09:28  gavin
+
+	* plugin.xml, src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/actions/DialogExamplesAction.java,
+	  src/org/eclipse/examples/test/actions/EditorPopupAction.java,
+	  src/org/eclipse/examples/test/actions/ShowDialogAction.java,
+	  src/org/eclipse/examples/test/views/ListenerView.java,
+	  src/org/eclipse/examples/test/views/WordContentProvider.java,
+	  src/org/eclipse/examples/test/views/WordView.java: Tidied up some
+	  stuff.
+
+2005-11-27 08:34  gavin
+
+	* .classpath, plugin.xml, META-INF/MANIFEST.MF,
+	  icons/bitinglizard.gif,
+	  src/org/eclipse/examples/test/StatusBar.java,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/actions/DialogExamples.java,
+	  src/org/eclipse/examples/test/actions/EditorPopupAction.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducerAction.java,
+	  src/org/eclipse/examples/test/actions/LogTest.java: Added a
+	  context menu item which sends the currently selected editor text
+	  to the elvin server on the channel 'code'.
+
+	  Added some ability for logging to eclipses default logger. (Error
+	  Log.)
+
+2005-11-25 17:52  gavin
+
+	* src/org/eclipse/examples/test/StatusBar.java,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  icons/endnfish.gif,
+	  src/org/eclipse/examples/test/views/Word.java,
+	  src/org/eclipse/examples/test/views/WordActionDelegate.java,
+	  src/org/eclipse/examples/test/views/WordActionFilter.java,
+	  src/org/eclipse/examples/test/views/WordContentProvider.java,
+	  src/org/eclipse/examples/test/views/WordFile.java,
+	  src/org/eclipse/examples/test/views/WordView.java: Allows last
+	  recevied message to be displayed in the status bar.
+
+2005-11-25 11:38  gavin
+
+	* src/org/eclipse/examples/test/actions/: ElvinConsumer.java,
+	  ElvinConsumerAction.java, ElvinProducerAction.java: Allows last
+	  recevied message to be displayed in the status bar.
+
+2005-11-21 12:50  gavin
+
+	* src/org/eclipse/examples/test/actions/: ElvinConsumer.java,
+	  ElvinConsumerAction.java, ElvinProducerAction.java: Changed
+	  'gav.g.la' to 'coldwired.com' the now dedicated elvind server.
+
+2005-11-17 14:00  gavin
+
+	* src/org/eclipse/examples/test/actions/: ElvinConsumer.java,
+	  ElvinConsumerAction.java, ElvinProducer.java,
+	  ElvinProducerAction.java: Tidied up the elvin stuff, allows
+	  passing of some parameters. Commented some more code.
+
+2005-11-14 13:04  gavin
+
+	* .classpath, .project, build.properties, plugin.xml,
+	  META-INF/MANIFEST.MF, icons/endkfunk.gif, icons/engrdrop.gif,
+	  icons/enrabite.gif, icons/ensktail.gif,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/actions/DialogExamples.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducer.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducerAction.java,
+	  src/org/eclipse/examples/test/actions/LogTest.java,
+	  src/org/eclipse/examples/test/actions/ShowDialogAction.java,
+	  src/org/eclipse/examples/test/views/ListenerView.java,
+	  src/org/eclipse/examples/test/views/SampleView.java: Initial
+	  import of the eclipse 'test' plugin
+
+2005-11-14 13:04  gavin
+
+	* .classpath, .project, build.properties, plugin.xml,
+	  META-INF/MANIFEST.MF, icons/endkfunk.gif, icons/engrdrop.gif,
+	  icons/enrabite.gif, icons/ensktail.gif,
+	  src/org/eclipse/examples/test/TestPlugin.java,
+	  src/org/eclipse/examples/test/actions/DialogExamples.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumer.java,
+	  src/org/eclipse/examples/test/actions/ElvinConsumerAction.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducer.java,
+	  src/org/eclipse/examples/test/actions/ElvinProducerAction.java,
+	  src/org/eclipse/examples/test/actions/LogTest.java,
+	  src/org/eclipse/examples/test/actions/ShowDialogAction.java,
+	  src/org/eclipse/examples/test/views/ListenerView.java,
+	  src/org/eclipse/examples/test/views/SampleView.java: Initial
+	  revision
+
